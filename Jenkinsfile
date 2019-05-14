@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('---Terraform Plan---'){
             steps {
-                terraform plan -var-file=input.tfvars
+                terraform plan -var-file="input.tfvars"
             }
         }
         stage('---Deploy---'){
